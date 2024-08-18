@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/touricon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Splash_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main" />
+        <activity android:name=".India_Gate" />
+        <activity android:name=".Purana_Quila" />
+        <activity android:name=".Humayun_Tomb" />
+        <activity android:name=".Akshardham" />
+        <activity android:name=".Rajghat" />
+        <activity android:name=".Qutb_Minar" />
+        <activity android:name=".Jama_Masjid" />
+        <activity android:name=".Red_Fort" />
+        <activity android:name=".Lotus_Temple" />
+        <activity android:name=".Jantar_Mantar" />
+        <activity android:name=".Bangla_Sahib" />
+        <activity android:name=".Museum" />
+        <activity android:name=".Agrasen" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivityRedFort"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".MapsActivityAgrasen"
+            android:label="@string/title_activity_maps2" />
+        <activity
+            android:name=".MapsActivityAkshardham"
+            android:label="@string/title_activity_maps_akahardham" />
+        <activity
+            android:name=".MapsActivityBanglaSahib"
+            android:label="@string/title_activity_maps_bangla_sahib" />
+        <activity
+            android:name=".MapsActivityHumayunTomb"
+            android:label="@string/title_activity_maps_humayun_tomb" />
+        <activity
+            android:name=".MapsActivityIndiaGate"
+            android:label="@string/title_activity_maps_india_gate" />
+        <activity
+            android:name=".MapsActivityJamaMasjid"
+            android:label="@string/title_activity_maps_jama_masjid" />
+        <activity
+            android:name=".MapsActivityJantarMantar"
+            android:label="@string/title_activity_maps_jantar_mantar" />
+        <activity
+            android:name=".MapsActivityLotusTemple"
+            android:label="@string/title_activity_maps_lotus_temple" />
+        <activity
+            android:name=".MapsActivityMuseum"
+            android:label="@string/title_activity_maps_museum" />
+        <activity
+            android:name=".MapsActivityPuranaQila"
+            android:label="@string/title_activity_maps_purana_qila" />
+        <activity
+            android:name=".MapsActivityQutbMinar"
+            android:label="@string/title_activity_maps_qutb_minar" />
+        <activity
+            android:name=".MapsActivityRajghat"
+            android:label="@string/title_activity_maps_rajghat" />
+        <activity
+            android:name=".MapsActivityddf"
+            android:label="@string/title_activity_maps_activityddf" />
+    </application>
+
+</manifest>

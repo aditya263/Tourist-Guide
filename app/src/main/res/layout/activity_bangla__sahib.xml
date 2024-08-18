@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/banglasahib" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bangla Sahib"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textColor="#f50808"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/img"
+        android:id="@+id/title"/>
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address :"
+        android:textStyle="bold"
+        android:layout_below="@+id/title"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"/>
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/txt1"
+        android:lines="4"
+        android:text="Ashoka Road, Connaught Place, Next to Grand Post Office, New Delhi, Delhi 110001"/>
+    <LinearLayout
+        android:layout_below="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll1"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Hours Of Operation :"/>
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt2"
+            android:layout_toRightOf="@+id/txt3"
+            android:lines="7"
+            android:text="Sunday 9AM–5:30PM
+Monday 9AM–5:30PM
+Tuesday 9AM–5:30PM
+Wednesday 9AM–5:30PM
+Thursday 9AM–5:30PM
+Friday 9AM–5:30PM
+Saturday 9AM–5:30PM">
+        </TextView>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1"
+        android:text="Visit Website..."
+        android:background="@color/bg_screen3"
+        android:tooltipText="Click to go to Wikipedia"
+        android:layout_marginBottom="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2"
+        android:text="Show on Map..."
+        android:background="@color/bg_screen3"
+        android:tooltipText="Click to open Map"
+        android:layout_alignBaseline="@+id/btn1"
+        android:layout_alignBottom="@+id/btn1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp" />
+
+</RelativeLayout>
